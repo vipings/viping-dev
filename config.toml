@@ -7,24 +7,42 @@
     # The description of your site
     description = "Personal website and blog"
 
-    theme = "even"
-
-    # Whether to automatically compile all Sass files in the sass directory
-    compile_sass = false
-
-    # Whether to build a search index to be used later on by a JavaScript library
-    build_search_index = true
+    theme = "serene"
+    output_dir = "public"
+    compile_sass = true
+    minify_html = false
+    build_search_index = false
+    generate_feeds = true
+    feed_filenames = ["atom.xml"]
+    taxonomies = [{ name = "tags" }, { name = "categories" }]
 
     # The default language
     default_language = "en"
 
-    # Whether to generate a feed
-    generate_feeds = true
+    [markdown]
+    highlight_code = true
+    highlight_theme = "css"
+    extra_syntaxes_and_themes = ["highlight_themes"]
+    highlight_themes_css = [
+      { theme = "serene-light", filename = "hl-light.css" },
+      { theme = "serene-dark", filename = "hl-dark.css" },
+    ]
+    render_emoji = false
+    external_links_target_blank = false
+    external_links_no_follow = true
+    external_links_no_referrer = true
+    smart_punctuation = false
+
+    [slugify]
+    paths = "on"
+    taxonomies = "on"
+    anchors = "on"
 
     # Enable HTTPS
     [extra]
     # Put all your custom variables here
     # You can add your social media links here
+    date_format = "%Y-%m-%d"
     social_links = [
         { name = "GitHub", url = "https://github.com/vipings" },
         { name = "Twitter", url = "https://twitter.com/vipings" },
@@ -32,9 +50,23 @@
     ]
     # Force HTTPS
     force_https = true
+    # Force theme for serene
+    force_theme = "light"
+    # 404 page error text
+    not_found_error_text = "Page not found"
+    # 404 page recovery text
+    not_found_recover_text = "Return to home"
+    # Enable reactions for blog posts
+    reaction = true
+    # Align reactions to the right
+    reaction_align = "right"
+    # Set reaction endpoint
+    reaction_endpoint = "https://api.github.com/repos/vipings/viping-dev/issues/"
 
-    [markdown]
-    # Whether to do syntax highlighting
-    # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-    highlight_code = true
-    highlight_theme = "solarized-light"
+    sections = [
+      { name = "blog", path = "/blog", is_external = false },
+    ]
+    blog_section_path = "/blog"
+    back_link_text = "Back"
+    footer_copyright = "© 2024 Vipin Pillai"
+    footer_credits = true

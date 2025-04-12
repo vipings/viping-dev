@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://viping.dev/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/404/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/blog/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/blog/hello-world/</loc>
+        <lastmod>2024-04-12</lastmod>
+    </url>
+    <url>
+        <loc>https://viping.dev/categories/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/categories/tech/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/blog/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/zola/</loc>
+    </url>
+</urlset>

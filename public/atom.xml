@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Vipin&#x27;s Personal Site</title>
+    <subtitle>Personal website and blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://viping.dev/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://viping.dev"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-04-12T00:00:00+00:00</updated>
+    <id>https://viping.dev/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Hello World</title>
+        <published>2024-04-12T00:00:00+00:00</published>
+        <updated>2024-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/hello-world/"/>
+        <id>https://viping.dev/blog/hello-world/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/hello-world/">&lt;p&gt;Welcome to my new blog! This is my first post using Zola, a modern static site generator.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-zola&quot;&gt;Why Zola?&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-zola&quot; aria-label=&quot;Anchor link for: why-zola&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;I chose Zola because:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&#x27;s fast and simple&lt;&#x2F;li&gt;
+&lt;li&gt;No dependencies required&lt;&#x2F;li&gt;
+&lt;li&gt;Built-in support for syntax highlighting&lt;&#x2F;li&gt;
+&lt;li&gt;Great documentation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Stay tuned for more posts!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
