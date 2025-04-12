@@ -4,7 +4,7 @@
 title = "Obsidian For Writing"
 description = ""
 date = 2025-04-13
-draft = flase
+draft = false
 [taxonomies]
 tags = []
 categories = []
