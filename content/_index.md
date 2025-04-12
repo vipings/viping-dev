@@ -8,7 +8,6 @@ id = "viping"
 bio = "SRE at Salesforce | Building reliable systems, automating chaos, and thinking deeply about the future of software"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/vipings" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/vipings" },
     { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/in/vipings" }
 ]
 footer = true

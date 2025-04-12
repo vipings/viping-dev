@@ -45,7 +45,6 @@
     date_format = "%Y-%m-%d"
     social_links = [
         { name = "GitHub", url = "https://github.com/vipings" },
-        { name = "Twitter", url = "https://twitter.com/vipings" },
         { name = "LinkedIn", url = "https://linkedin.com/in/vipings" }
     ]
     # Force HTTPS
