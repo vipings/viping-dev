@@ -1,0 +1,8 @@
+# Cloudflare Pages configuration
+# Redirect all HTTP traffic to HTTPS
+http://viping.dev/* https://viping.dev/:splat 301!
+http://www.viping.dev/* https://viping.dev/:splat 301!
+https://www.viping.dev/* https://viping.dev/:splat 301!
+
+# Handle 404s
+/* /404.html 404 
