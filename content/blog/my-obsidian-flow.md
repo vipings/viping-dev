@@ -2,7 +2,7 @@
 title = "My Obsidian Flow"
 description = ""
 date = 2025-04-12
-draft = true
+draft = false
 [taxonomies]
 tags = ["obsidian"]
 categories = ["workflow","productivity"]
