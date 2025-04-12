@@ -1,7 +1,7 @@
 +++
 title = "The Beauty of Boredom"
 description = "In a world full of alerts, pings, and dopamine loops, boredom might be my most productive tool."
-date = 2024-04-12
+date = 2025-04-12
 draft = false
 
 [taxonomies]
