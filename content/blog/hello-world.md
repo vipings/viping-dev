@@ -11,7 +11,7 @@ categories = ["perspective"]
 [extra]
 lang = "en"
 toc = false
-comment = false
+comment = true
 copy = true
 math = false
 mermaid = false
@@ -24,7 +24,7 @@ No incident. No Slack ping. No email loop.
 
 Just… silence.
 
-And for years, I tried to fill it: Twitter, Reddit, Hacker News, open-close-repeat.
+And for years, I tried to fill it.
 
 But over time, I’ve come to realize something:
 
