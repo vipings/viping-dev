@@ -18,7 +18,7 @@ outdate_alert = false
 +++
 # How I used Obsidian for my personal blog
 
-Testing my Obsidian workflow after some updates. 🔥
+Testing my Obsidian workflow after some updates. 
 
 --
 Vipin
