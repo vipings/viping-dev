@@ -23,7 +23,7 @@ I created this blog 1 month back. I was motivated to start writing. Then I left 
 I have created workflow to make it easier for me to publish this blog using Obsidian. Not sure what is stopping me from writing. This blog is to find out whats blocking me from continuing the habit. 
 
 My work is not hectic; luckily. I get lot of family time. I travel to office only 2 days a week. That too not compulsory. Then whats stopping me ? Let me try to decipher it. Am I wasting time ? 
-Hmm.. I don't believe in the concept of wasting time. Anyway we spend time somehow. Wasting is a heavy work in my opinion, and too vague. May be what I mean is, I am not productive enough ?
+Hmm.. I don't believe in the concept of wasting time. Anyway we spend time somehow. Wasting is a heavy word in my opinion, and too vague. May be what I mean is, I am not productive enough ?
 
 Let's see if this writing habit will continue. I will find out reasons and write tomorrow. 
 
