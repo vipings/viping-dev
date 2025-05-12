@@ -17,7 +17,6 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# Writing After 1 Month Break
 
 I created this blog 1 month back. I was motivated to start writing. Then I left this blog like this.
 I have created workflow to make it easier for me to publish this blog using Obsidian. Not sure what is stopping me from writing. This blog is to find out whats blocking me from continuing the habit. 
