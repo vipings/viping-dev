@@ -24,7 +24,7 @@ Then I decided, I can try a local gym near to my place. It was after I did some 
 
 Anyway, after starting gym I feel good. I think just because I get up early, focus on food, and consciously avoiding food bad for me. It's a good start. 
 
-Let's see where this leads to me. 
+Let's see where this leads me. 
 
 --
 Vipin
