@@ -22,7 +22,7 @@ I started a gym routine on last month, to be precise 28 April 2025. It was not a
 
 Then I decided, I can try a local gym near to my place. It was after I did some blood work done, and results were not favourable. 
 
-Anyway, after starting gym I feel good. I think just because I get up early, focus on food, and consciously avoiding foo bad for me. It's a good start. 
+Anyway, after starting gym I feel good. I think just because I get up early, focus on food, and consciously avoiding food bad for me. It's a good start. 
 
 Let's see where this leads to me. 
 
