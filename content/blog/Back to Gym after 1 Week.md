@@ -17,9 +17,8 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# Back to Gym after 10 Days
 
-Was down with throat pain since last week. Skipped gym from last Saturday. Today went back to gym. Not in rhythm but wanted to get back. 
+I was down with throat pain since last week. Skipped gym from last Saturday. Today went back to gym. Not in rhythm but wanted to get back. 
 
 --
 Vipin
