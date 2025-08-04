@@ -6,8 +6,8 @@ description = ""
 date = 2025-08-04
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["routine", "personal","gym"]
+categories =  ["personal"]
 [extra]
 lang = "en"
 toc = false
