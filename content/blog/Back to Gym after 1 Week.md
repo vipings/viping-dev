@@ -1,7 +1,7 @@
 
 +++
 
-title = "Back to Gym after 1 Week"
+title = "Back to Gym after 10 Days"
 description = ""
 date = 2025-08-04
 draft = false
