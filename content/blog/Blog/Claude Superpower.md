@@ -4,7 +4,7 @@
 title = "Claude Superpower"
 description = ""
 date = 2026-02-20
-draft = true
+draft = false
 [taxonomies]
 tags = []
 categories = []
