@@ -5,7 +5,7 @@ template = "home.html"
 lang = "en"
 name = "Vipin GS"
 id = "viping"
-bio = "deep thoughts, real life, and the curious paths between them."
+bio = "notes from someone still figuring it out."
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/vipings" },
     { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/in/vipings" }
