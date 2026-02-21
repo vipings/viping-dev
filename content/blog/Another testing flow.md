@@ -1,12 +1,13 @@
+
 +++
 
 title = "Another testing flow"
-description = "Testing the posting flow after a long time away."
+description = ""
 date = 2026-02-20
 draft = false
 [taxonomies]
-tags = ["testing", "flow", "personal"]
-categories = ["personal"]
+tags = []
+categories = []
 [extra]
 lang = "en"
 toc = false

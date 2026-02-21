@@ -1,7 +1,7 @@
 +++
 
 title = "How I used Obsidian for my personal blog"
-description = "Testing my Obsidian workflow after some updates to see how it works for my personal blog."
+description = ""
 date = 2025-04-13
 draft = false
 [taxonomies]
@@ -16,6 +16,7 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
+# How I used Obsidian for my personal blog
 
 Testing my Obsidian workflow after some updates. 
 

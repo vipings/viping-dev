@@ -1,7 +1,8 @@
+
 +++
 
 title = "Importance of having an opinion in neo-AI Era"
-description = "Why forming your own opinions matters more than ever as AI takes over our thinking—don't just say 'whatever.'"
+description = ""
 date = 2025-08-30
 draft = false
 [taxonomies]

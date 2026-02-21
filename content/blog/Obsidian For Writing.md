@@ -1,12 +1,13 @@
+
 +++
 
 title = "Obsidian For Writing"
-description = "How I set up Obsidian templates and shell plugins to power this blog."
+description = ""
 date = 2025-04-13
 draft = false
 [taxonomies]
-tags = ["obsidian", "writing", "blogging", "tools"]
-categories = ["tech"]
+tags = []
+categories = []
 [extra]
 lang = "en"
 toc = false
@@ -16,6 +17,7 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
+# Obsidian For Writing
 
 I used Obsidian templates, shell plugins for this blog. 
 

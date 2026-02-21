@@ -1,7 +1,8 @@
+
 +++
 
 title = "Thoughts on my first 2 weeks after starting Gym"
-description = "Started my gym journey after 2-3 years of procrastination. Feeling good with early mornings, better food choices, and hoping this leads somewhere positive."
+description = ""
 date = 2025-05-16
 draft = false
 [taxonomies]

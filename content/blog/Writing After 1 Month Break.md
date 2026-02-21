@@ -1,7 +1,8 @@
+
 +++
 
 title = "Writing After 1 Month Break"
-description = "Reflecting on why I stopped writing after starting this blog a month ago and exploring what's really blocking me."
+description = ""
 date = 2025-05-12
 draft = false
 [taxonomies]

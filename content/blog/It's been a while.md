@@ -1,12 +1,13 @@
+
 +++
 
 title = "its been a while"
-description = "A brief reflection on taking a break from the gym and getting back into a routine."
+description = ""
 date = 2026-02-20
 draft = false
 [taxonomies]
-tags = ["fitness", "gym", "routine", "comeback"]
-categories = ["fitness"]
+tags = []
+categories = []
 [extra]
 lang = "en"
 toc = false
