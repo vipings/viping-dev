@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Vipin&#x27;s Personal Site - Blog</title>
+    <subtitle>Personal website and blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://viping.dev/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://viping.dev/blog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-02-21T00:00:00+00:00</updated>
+    <id>https://viping.dev/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>I tried Claude API to generate my blog meta data and tags</title>
+        <published>2026-02-21T00:00:00+00:00</published>
+        <updated>2026-02-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/i-tried-claude-api-to-generate-my-blog-meta-data-and-tags/"/>
+        <id>https://viping.dev/blog/i-tried-claude-api-to-generate-my-blog-meta-data-and-tags/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/i-tried-claude-api-to-generate-my-blog-meta-data-and-tags/">&lt;p&gt;I brought $5 credits for generating the metadata, tags and categories for my blog posts. There might be better ways using local llm or some other tools.
+I just wanted to check the use case. I write my blogs in Obsidian. And just press cmd+shift+d to deploy. The process seems very much easy. But only downside was I was manually filling up tags, description etc. I don&#x27;t want LLM to proof read or rephrase my blogs. Then there is no point in writing. I want to write my own blog but don&#x27;t want to manually create the tags.
+Tags are useful in filtering my posts. Right now there are handful of posts, but when it grows in number, tags would be a valuable tool.
+Claude Code helped to to set up a simple script which calls the Claude API and generate these tags and all. Also Claude convinced me that, with $5, I can write around 40000 posts !
+So I hope it&#x27;s not going to run out.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title></title>
+        <published>2026-02-21T00:00:00+00:00</published>
+        <updated>2026-02-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/untitled/"/>
+        <id>https://viping.dev/blog/untitled/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/untitled/">&lt;p&gt;testing if claude generate my blog title and tags.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Another testing flow</title>
+        <published>2026-02-20T00:00:00+00:00</published>
+        <updated>2026-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/another-testing-flow/"/>
+        <id>https://viping.dev/blog/another-testing-flow/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/another-testing-flow/">&lt;p&gt;This is a test after a long time. Seems like the flow is gone.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Claude Superpower</title>
+        <published>2026-02-20T00:00:00+00:00</published>
+        <updated>2026-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/claude-superpower/"/>
+        <id>https://viping.dev/blog/claude-superpower/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/claude-superpower/">&lt;h1 id=&quot;claude-superpower&quot;&gt;Claude Superpower&lt;a class=&quot;zola-anchor&quot; href=&quot;#claude-superpower&quot; aria-label=&quot;Anchor link for: claude-superpower&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;Claude helped me to fix my blog workflow.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>its been a while</title>
+        <published>2026-02-20T00:00:00+00:00</published>
+        <updated>2026-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/it-s-been-a-while/"/>
+        <id>https://viping.dev/blog/it-s-been-a-while/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/it-s-been-a-while/">&lt;p&gt;I don&#x27;t know what to write. But its been a while. I stopped going gym. Or it was irregular.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Importance of having an opinion in neo-AI Era</title>
+        <published>2025-08-30T00:00:00+00:00</published>
+        <updated>2025-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/importance-of-having-an-opinion-in-neo-ai-era/"/>
+        <id>https://viping.dev/blog/importance-of-having-an-opinion-in-neo-ai-era/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/importance-of-having-an-opinion-in-neo-ai-era/">&lt;p&gt;When someone asks what you want, you should not say whatever. Thats my take on the life. This is particularly important in any decision we need to take. Don&#x27;t put a cognitive sedation in any of that. Every decision, even ordering food in a restaurant makes should makes you think instead of easily repeating whatever other want or already ordered.&lt;&#x2F;p&gt;
+&lt;p&gt;In a world where cognitive skills are outsourced to AI agents, this simple decision making is more often than needed. I&#x27;ve seen people search for best things based on reviews, which became a norm. Everything becomes highly reviewed digitally even we are not sure it could be trustworthy.&lt;&#x2F;p&gt;
+&lt;p&gt;In my opinion, every decision should be made with our own analytical skills than following blinding from a bot.&lt;&#x2F;p&gt;
+&lt;p&gt;Decisions and choices makes life as we know. Chose it wisely.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Back to Gym after 10 Days</title>
+        <published>2025-08-04T00:00:00+00:00</published>
+        <updated>2025-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/back-to-gym-after-1-week/"/>
+        <id>https://viping.dev/blog/back-to-gym-after-1-week/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/back-to-gym-after-1-week/">&lt;p&gt;I was down with throat pain since last week. Skipped gym from last Saturday. Today went back to gym. Not in rhythm but wanted to get back.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I&#x27;m back after 2 months</title>
+        <published>2025-08-03T00:00:00+00:00</published>
+        <updated>2025-08-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/i-m-back-after-2-months/"/>
+        <id>https://viping.dev/blog/i-m-back-after-2-months/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/i-m-back-after-2-months/">&lt;p&gt;Its been 2 months. I got a new laptop for work. My blog workflow was in old laptop. Just now recovered it. Its now working.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Retesting my Obsidian Workflow</title>
+        <published>2025-08-02T00:00:00+00:00</published>
+        <updated>2025-08-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/retesting-my-obsidian-workflow/"/>
+        <id>https://viping.dev/blog/retesting-my-obsidian-workflow/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/retesting-my-obsidian-workflow/">&lt;h1 id=&quot;retesting-my-obsidian-workflow&quot;&gt;Retesting my Obsidian Workflow&lt;a class=&quot;zola-anchor&quot; href=&quot;#retesting-my-obsidian-workflow&quot; aria-label=&quot;Anchor link for: retesting-my-obsidian-workflow&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;Retesting my Obsidian Workflow..&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Thoughts on my first 2 weeks after starting Gym</title>
+        <published>2025-05-16T00:00:00+00:00</published>
+        <updated>2025-05-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/thoughts-on-my-first-2-weeks-after-starting-gym/"/>
+        <id>https://viping.dev/blog/thoughts-on-my-first-2-weeks-after-starting-gym/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/thoughts-on-my-first-2-weeks-after-starting-gym/">&lt;p&gt;I started a gym routine on last month, to be precise 28 April 2025. It was not a sudden decision. I had been procrastinating this from last 2 or 3 years !! Even brought a Cult Play membership, which I used for learning swimming. Then that Cult center closed. That time Cult team gave me choice to retain either  Play membership and start going for swim in other centres. Or convert it into gym plan. I chose gym plan. But never visited the gym with that.&lt;&#x2F;p&gt;
+&lt;p&gt;Then I decided, I can try a local gym near to my place. It was after I did some blood work done, and results were not favourable.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, after starting gym I feel good. I think just because I get up early, focus on food, and consciously avoiding food bad for me. It&#x27;s a good start.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s see where this leads me.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Housekeeper and the Professor-A Book Review</title>
+        <published>2025-05-12T00:00:00+00:00</published>
+        <updated>2025-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/the-housekeeper-and-the-professor-a-book-review/"/>
+        <id>https://viping.dev/blog/the-housekeeper-and-the-professor-a-book-review/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/the-housekeeper-and-the-professor-a-book-review/">&lt;p&gt;I don&#x27;t know the name of the professor who has 80 mins of memory. But I know his obsession with numbers.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t know the name of the housekeeper who is insanely human and down to earth. But I know her curiosity to learn the unknown.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t know the name of the kid who wear a baseball cap and tune the radio for the baseball match updates. But I know how mature enough he is to deal with an old man who has short term memory.&lt;&#x2F;p&gt;
+&lt;p&gt;This is the story I loved reading. It made me sad sometimes, made me laugh sometimes. It has everything. Slow, but fast enough for anyone who loves this kind of story telling. Without forcing anything in you, Ogawa&#x27;s words will reach in your heart and will stay for long.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Writing After 1 Month Break</title>
+        <published>2025-05-12T00:00:00+00:00</published>
+        <updated>2025-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/writing-after-1-month-break/"/>
+        <id>https://viping.dev/blog/writing-after-1-month-break/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/writing-after-1-month-break/">&lt;p&gt;I created this blog 1 month back. I was motivated to start writing. Then I left this blog like this.
+I have created workflow to make it easier for me to publish this blog using Obsidian. Not sure what is stopping me from writing. This blog is to find out whats blocking me from continuing the habit.&lt;&#x2F;p&gt;
+&lt;p&gt;My work is not hectic; luckily. I get lot of family time. I travel to office only 2 days a week. That too not compulsory. Then whats stopping me ? Let me try to decipher it. Am I wasting time ?
+Hmm.. I don&#x27;t believe in the concept of wasting time. Anyway we spend time somehow. Wasting is a heavy word in my opinion, and too vague. May be what I mean is, I am not productive enough ?&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s see if this writing habit will continue. I will find out reasons and write tomorrow.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How I used Obsidian for my personal blog</title>
+        <published>2025-04-13T00:00:00+00:00</published>
+        <updated>2025-04-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/how-i-used-obsidian-for-my-personal-blog/"/>
+        <id>https://viping.dev/blog/how-i-used-obsidian-for-my-personal-blog/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/how-i-used-obsidian-for-my-personal-blog/">&lt;h1 id=&quot;how-i-used-obsidian-for-my-personal-blog&quot;&gt;How I used Obsidian for my personal blog&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-i-used-obsidian-for-my-personal-blog&quot; aria-label=&quot;Anchor link for: how-i-used-obsidian-for-my-personal-blog&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;Testing my Obsidian workflow after some updates.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Obsidian For Writing</title>
+        <published>2025-04-13T00:00:00+00:00</published>
+        <updated>2025-04-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/obsidian-for-writing/"/>
+        <id>https://viping.dev/blog/obsidian-for-writing/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/obsidian-for-writing/">&lt;h1 id=&quot;obsidian-for-writing&quot;&gt;Obsidian For Writing&lt;a class=&quot;zola-anchor&quot; href=&quot;#obsidian-for-writing&quot; aria-label=&quot;Anchor link for: obsidian-for-writing&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;I used Obsidian templates, shell plugins for this blog.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I let ChatGPT write my first blog!</title>
+        <published>2025-04-12T00:00:00+00:00</published>
+        <updated>2025-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/brave-new-world/"/>
+        <id>https://viping.dev/blog/brave-new-world/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/brave-new-world/">&lt;p&gt;If you check the first writings in the blog is-you guessed it- AI generated. It&#x27;s a pity. But that&#x27;s the new world looks like. At least for me. I started to delegate tasks to LLMs. But for good or bad, I&#x27;m writing this for myself with my own thoughts and inefficiencies. I&#x27;m not a good writer. But I want to be. I have a book sitting on my desk, which came last week from Amazon. You might be knowing it - On Writing Well by William Zinsser. I&#x27;ve to read it. Maybe, maybe in distant future, I would be able to write well.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, I am not going to admit failure early. I won&#x27;t feed this post to some LLM and polish it. Let it be vulnerable enough with all the mistakes and what not. Let it be.&lt;&#x2F;p&gt;
+&lt;p&gt;For now, I feel like I&#x27;m writing a lot for a blog which has born hours ago.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t want to burn out. Maybe my brain will tell me never write a blog again!&lt;&#x2F;p&gt;
+&lt;p&gt;So let&#x27;s stop here. I will come back with another thought.&lt;&#x2F;p&gt;
+&lt;p&gt;--&lt;&#x2F;p&gt;
+&lt;p&gt;Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Beauty of Boredom</title>
+        <published>2025-04-12T00:00:00+00:00</published>
+        <updated>2025-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/hello-world/"/>
+        <id>https://viping.dev/blog/hello-world/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/hello-world/">&lt;p&gt;There’s a strange moment — usually around 3:20PM — when nothing demands my attention.&lt;&#x2F;p&gt;
+&lt;p&gt;No incident. No Slack ping. No email loop.&lt;&#x2F;p&gt;
+&lt;p&gt;Just… silence.&lt;&#x2F;p&gt;
+&lt;p&gt;And for years, I tried to fill it.&lt;&#x2F;p&gt;
+&lt;p&gt;But over time, I’ve come to realize something:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That boring 10 minutes? It’s not empty. It’s loaded.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;boredom-is-where-systems-emerge&quot;&gt;Boredom is where systems emerge&lt;a class=&quot;zola-anchor&quot; href=&quot;#boredom-is-where-systems-emerge&quot; aria-label=&quot;Anchor link for: boredom-is-where-systems-emerge&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;When I&#x27;m bored, my brain starts refactoring ideas. Not code — &lt;strong&gt;concepts.&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Architecture. Tradeoffs. Priorities. Pain points no dashboard will ever show me.&lt;&#x2F;p&gt;
+&lt;p&gt;Boredom lets the deeper parts of my mind surface with insights that don’t arrive in a sprint review or Slack thread.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;it-s-not-about-laziness-it-s-about-space&quot;&gt;It&#x27;s not about laziness — it&#x27;s about space&lt;a class=&quot;zola-anchor&quot; href=&quot;#it-s-not-about-laziness-it-s-about-space&quot; aria-label=&quot;Anchor link for: it-s-not-about-laziness-it-s-about-space&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;As an SRE, most of what I do is &lt;strong&gt;reduce chaos&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;And I’ve started to believe: you can’t reduce chaos &lt;strong&gt;externally&lt;&#x2F;strong&gt; if you’re constantly stimulating chaos &lt;strong&gt;internally&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The more intentional my boredom, the more calm I bring to on-call.&lt;br &#x2F;&gt;
+The more space I make for stillness, the better my infrastructure becomes.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;so-now-i-protect-my-boring-moments&quot;&gt;So now I protect my boring moments&lt;a class=&quot;zola-anchor&quot; href=&quot;#so-now-i-protect-my-boring-moments&quot; aria-label=&quot;Anchor link for: so-now-i-protect-my-boring-moments&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Sometimes I just stare out the window.&lt;br &#x2F;&gt;
+Sometimes I open a blank file and type until something that isn’t noise shows up.&lt;&#x2F;p&gt;
+&lt;p&gt;Sometimes I do nothing.&lt;&#x2F;p&gt;
+&lt;p&gt;That’s not anti-productivity. That’s &lt;strong&gt;preparing to do real work.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;tl-dr&quot;&gt;tl;dr&lt;a class=&quot;zola-anchor&quot; href=&quot;#tl-dr&quot; aria-label=&quot;Anchor link for: tl-dr&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;If you build things, fix things, or keep things running — try being bored.&lt;&#x2F;p&gt;
+&lt;p&gt;Not the scrolling, fake boredom. The &lt;strong&gt;intentional, empty kind&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You might find clarity.&lt;br &#x2F;&gt;
+You might design something better.&lt;br &#x2F;&gt;
+Or maybe — you’ll just enjoy a rare moment of nothing.&lt;&#x2F;p&gt;
+&lt;p&gt;Either way, your future self will thank you.&lt;&#x2F;p&gt;
+&lt;p&gt;—
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My Obsidian Flow</title>
+        <published>2025-04-12T00:00:00+00:00</published>
+        <updated>2025-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://viping.dev/blog/my-obsidian-flow/"/>
+        <id>https://viping.dev/blog/my-obsidian-flow/</id>
+        
+        <content type="html" xml:base="https://viping.dev/blog/my-obsidian-flow/">&lt;h1 id=&quot;my-obsidian-flow&quot;&gt;My Obsidian Flow&lt;a class=&quot;zola-anchor&quot; href=&quot;#my-obsidian-flow&quot; aria-label=&quot;Anchor link for: my-obsidian-flow&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;ve developed a Obsidian writing flow. This could help me to just write in Obsidean. Then deploy. Simple. I will explain how it works in next blog.&lt;&#x2F;p&gt;
+&lt;p&gt;Let me see in action. Testing it with this blog.&lt;&#x2F;p&gt;
+&lt;p&gt;--
+Vipin&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
