@@ -4,13 +4,14 @@ set -e
 VAULT_DIR="/Users/vpillai/Library/Mobile Documents/iCloud~md~obsidian/Documents/viping.dev"
 ZOLA_DIR=~/viping-dev/content/blog
 
-# Sync blog posts, exclude .obsidian/ and templates/
+# Sync blog posts from the Blog/ subfolder in the vault
 rsync -av \
-  --exclude=".obsidian/" \
-  --exclude="templates/" \
-  "$VAULT_DIR/" "$ZOLA_DIR/"
+  "$VAULT_DIR/Blog/" "$ZOLA_DIR/"
 
 cd ~/viping-dev
+
+# Enrich empty post descriptions using Claude
+python3 ~/viping-dev/scripts/enrich_metadata.py
 
 # Zola build
 /usr/local/bin/zola build
