@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auto-fill empty post metadata (title, description, tags, categories) using Claude Haiku."""
+"""Auto-fill empty post metadata (title, description, tags, categories) using Claude."""
 
 import json
 import os
@@ -11,17 +11,32 @@ BLOG_DIR = Path.home() / "viping-dev" / "content" / "blog"
 MAX_BODY_CHARS = 800
 
 
-def get_api_key():
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        print("WARNING: ANTHROPIC_API_KEY not set — skipping metadata enrichment")
+def get_client():
+    try:
+        import anthropic
+    except ImportError:
+        print("WARNING: anthropic package not installed — skipping enrichment")
+        print("  Run: pip3 install anthropic")
         sys.exit(0)
-    return key
+
+    auth_token = os.environ.get("ANTHROPIC_AUTH_TOKEN")
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    bedrock_url = os.environ.get("ANTHROPIC_BEDROCK_BASE_URL")
+
+    if api_key:
+        return anthropic.Anthropic(api_key=api_key)
+    elif bedrock_url and auth_token:
+        # Salesforce Bedrock gateway — standard Anthropic client with custom base URL
+        return anthropic.Anthropic(api_key=auth_token, base_url=bedrock_url)
+    else:
+        print("WARNING: No API credentials found — skipping metadata enrichment")
+        print("  Set ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN + ANTHROPIC_BEDROCK_BASE_URL")
+        sys.exit(0)
 
 
 def parse_frontmatter(text):
     """Return (frontmatter_str, body_str) for TOML +++ delimited files."""
-    match = re.match(r"^\+\+\+\n(.*?)\n\+\+\+\n?(.*)", text, re.DOTALL)
+    match = re.match(r"^\s*\+\+\+\n(.*?)\n\+\+\+\n?(.*)", text, re.DOTALL)
     if not match:
         return None, None
     return match.group(1), match.group(2)
@@ -87,7 +102,7 @@ def generate_metadata(client, frontmatter, body):
     )
 
     message = client.messages.create(
-        model="claude-haiku-4-5",
+        model=os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5"),
         max_tokens=200,
         messages=[{"role": "user", "content": prompt}],
     )
@@ -143,16 +158,7 @@ def enrich_file(client, path):
 
 
 def main():
-    api_key = get_api_key()
-
-    try:
-        import anthropic
-    except ImportError:
-        print("WARNING: anthropic package not installed — skipping enrichment")
-        print("  Run: pip3 install anthropic")
-        sys.exit(0)
-
-    client = anthropic.Anthropic(api_key=api_key)
+    client = get_client()
 
     md_files = list(BLOG_DIR.rglob("*.md"))
     enriched = 0

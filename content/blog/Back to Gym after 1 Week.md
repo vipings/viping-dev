@@ -1,8 +1,7 @@
-
 +++
 
 title = "Back to Gym after 10 Days"
-description = ""
+description = "Getting back to the gym after 10 days of throat pain. Not quite in rhythm yet, but determined to restart my routine."
 date = 2025-08-04
 draft = false
 [taxonomies]

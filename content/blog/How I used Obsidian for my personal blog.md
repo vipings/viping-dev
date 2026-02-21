@@ -1,7 +1,7 @@
 +++
 
 title = "How I used Obsidian for my personal blog"
-description = ""
+description = "Testing my Obsidian workflow after some updates to see how it works for my personal blog."
 date = 2025-04-13
 draft = false
 [taxonomies]

@@ -1,13 +1,12 @@
-
 +++
 
 title = "Obsidian For Writing"
-description = ""
+description = "How I set up Obsidian templates and shell plugins to power this blog."
 date = 2025-04-13
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["obsidian", "writing", "blogging", "tools"]
+categories = ["tech"]
 [extra]
 lang = "en"
 toc = false

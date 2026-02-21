@@ -1,6 +1,6 @@
 +++
 title = "I let ChatGPT write my first blog!"
-description = ""
+description = "Reflecting on why I used AI for my first posts and why I'm now writing with my own voice, imperfections and all."
 date = 2025-04-12
 draft = false
 

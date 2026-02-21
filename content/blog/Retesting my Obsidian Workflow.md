@@ -1,13 +1,12 @@
-
 +++
 
 title = "Retesting my Obsidian Workflow"
-description = ""
+description = "Revisiting my Obsidian setup to see what's working and what needs adjusting."
 date = 2025-08-02
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["obsidian", "workflow", "note-taking", "productivity"]
+categories = ["productivity"]
 [extra]
 lang = "en"
 toc = false
