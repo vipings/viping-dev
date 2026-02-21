@@ -10,6 +10,10 @@ rsync -av \
 
 cd ~/viping-dev
 
+# Load env vars (needed when launched from GUI apps like Obsidian)
+[ -f ~/.zshenv ] && source ~/.zshenv
+[ -f ~/.zshrc ] && source ~/.zshrc
+
 # Enrich empty post descriptions using Claude
 python3 ~/viping-dev/scripts/enrich_metadata.py
 
