@@ -17,7 +17,6 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# My Obsidian Flow
 
 I've developed a Obsidian writing flow. This could help me to just write in Obsidean. Then deploy. Simple. I will explain how it works in next blog. 
 

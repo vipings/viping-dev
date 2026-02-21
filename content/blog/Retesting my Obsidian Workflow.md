@@ -16,7 +16,6 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# Retesting my Obsidian Workflow
 
 Retesting my Obsidian Workflow.. 
 

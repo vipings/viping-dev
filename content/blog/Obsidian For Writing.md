@@ -16,7 +16,6 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# Obsidian For Writing
 
 I used Obsidian templates, shell plugins for this blog. 
 

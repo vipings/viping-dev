@@ -16,7 +16,6 @@ math = false
 mermaid = false
 outdate_alert = false
 +++
-# Claude Superpower
 
 Claude helped me to fix my blog workflow. 
 
