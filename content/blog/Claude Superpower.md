@@ -1,13 +1,12 @@
-
 +++
 
 title = "Claude Superpower"
-description = ""
+description = "Claude helped me streamline my blog workflow and boost my productivity."
 date = 2026-02-20
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["claude", "blog", "workflow", "ai"]
+categories = ["tech"]
 [extra]
 lang = "en"
 toc = false

@@ -7,7 +7,7 @@ import re
 import sys
 from pathlib import Path
 
-BLOG_DIR = Path.home() / "viping-dev" / "content" / "blog"
+BLOG_DIR = Path(os.environ.get("BLOG_DIR", Path.home() / "viping-dev" / "content" / "blog"))
 MAX_BODY_CHARS = 800
 
 

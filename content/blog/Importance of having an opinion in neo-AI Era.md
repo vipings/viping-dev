@@ -1,8 +1,7 @@
-
 +++
 
 title = "Importance of having an opinion in neo-AI Era"
-description = ""
+description = "Why outsourcing your thinking to AI and reviews is lazy—you should actually form your own opinions on everything."
 date = 2025-08-30
 draft = false
 [taxonomies]

@@ -1,13 +1,12 @@
-
 +++
 
 title = "I tried Claude API to generate my blog meta data and tags"
-description = ""
+description = "How I used Claude API to automate blog metadata generation while keeping my writing authentic."
 date = 2026-02-21
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["automation", "blogging", "claude-api", "productivity"]
+categories = ["tech"]
 [extra]
 lang = "en"
 toc = false

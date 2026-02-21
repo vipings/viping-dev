@@ -4,17 +4,17 @@ set -e
 VAULT_DIR="/Users/vpillai/Library/Mobile Documents/iCloud~md~obsidian/Documents/viping.dev"
 ZOLA_DIR=~/viping-dev/content/blog
 
-# Sync blog posts from the Blog/ subfolder in the vault
-rsync -av \
-  "$VAULT_DIR/Blog/" "$ZOLA_DIR/"
-
 cd ~/viping-dev
 
 # Load env vars (needed when launched from GUI apps like Obsidian)
 [ -f ~/.zshenv ] && source ~/.zshenv
 
-# Enrich empty post descriptions using Claude
-python3 ~/viping-dev/scripts/enrich_metadata.py
+# Enrich vault posts BEFORE rsync so enriched metadata is never overwritten
+BLOG_DIR="$VAULT_DIR/Blog" python3 ~/viping-dev/scripts/enrich_metadata.py
+
+# Sync blog posts from the Blog/ subfolder in the vault
+rsync -av \
+  "$VAULT_DIR/Blog/" "$ZOLA_DIR/"
 
 # Zola build
 /usr/local/bin/zola build

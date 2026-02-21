@@ -1,8 +1,7 @@
-
 +++
 
 title = "I'm back after 2 months"
-description = ""
+description = "Finally back after 2 months! Got a new work laptop and just recovered my blog workflow from the old one. It's working now."
 date = 2025-08-03
 draft = false
 [taxonomies]
