@@ -183,6 +183,13 @@ function addFootnoteBacklink() {
   });
 }
 
+function enableImgLazyLoad() {
+  document.querySelectorAll('.prose img').forEach(img => {
+    if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+    if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+  });
+}
+
 function enableImgLightense() {
   window.addEventListener("load", () => Lightense(".prose img:not(.no-lightense)", { background: 'rgba(43, 43, 43, 0.19)' }));
 }
@@ -234,9 +241,17 @@ function enableReaction() {
     }
   };
   const init = async () => {
+    const cacheKey = `reactions-${slug}`;
+    const cached = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+    if (cached && Date.now() - cached.ts < 60000) {
+      state.reaction = cached.data;
+      render();
+      return;
+    }
     const resp = await fetch(`${endpoint}?slug=${slug}`);
     if (resp.status === 200) {
       state.reaction = await resp.json();
+      localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), data: state.reaction }));
       render();
     }
   };
@@ -256,6 +271,7 @@ if (document.body.classList.contains('post')) {
 if (document.querySelector('.prose')) {
   addCopyBtns();
   addFootnoteBacklink();
+  enableImgLazyLoad();
   enableImgLightense();
   enableReaction();
 }
