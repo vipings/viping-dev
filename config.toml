@@ -67,5 +67,5 @@
     ]
     blog_section_path = "/blog"
     back_link_text = "Back"
-    footer_copyright = "© 2025 Vipin"
+    footer_copyright = "Vipin"
     footer_credits = true
