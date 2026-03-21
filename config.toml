@@ -10,7 +10,7 @@
     theme = "serene"
     output_dir = "public"
     compile_sass = true
-    minify_html = false
+    minify_html = true
     build_search_index = false
     generate_feeds = true
     feed_filenames = ["atom.xml"]
