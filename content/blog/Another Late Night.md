@@ -1,7 +1,7 @@
 
 +++
 
-title = ""
+title = "Another Late Night"
 description = ""
 date = 2026-08-14
 draft = false

@@ -1,8 +1,7 @@
 +++
 
 title = "My Obsidian Flow"
-
-description = "I've built a simple Obsidian writing flow to go from drafting to deployment—testing it out with this blog post."
+description = ""
 date = 2025-04-12
 draft = false
 [taxonomies]
