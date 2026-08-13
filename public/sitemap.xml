@@ -108,7 +108,13 @@
         <loc>https://viping.dev/categories/books/</loc>
     </url>
     <url>
+        <loc>https://viping.dev/categories/career/</loc>
+    </url>
+    <url>
         <loc>https://viping.dev/categories/fitness/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/categories/learning/</loc>
     </url>
     <url>
         <loc>https://viping.dev/categories/personal/</loc>
@@ -205,6 +211,9 @@
     </url>
     <url>
         <loc>https://viping.dev/tags/testing/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/thoughts/</loc>
     </url>
     <url>
         <loc>https://viping.dev/tags/tools/</loc>
