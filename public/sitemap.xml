@@ -10,6 +10,10 @@
         <loc>https://viping.dev/blog/</loc>
     </url>
     <url>
+        <loc>https://viping.dev/blog/another-late-night/</loc>
+        <lastmod>2026-08-14</lastmod>
+    </url>
+    <url>
         <loc>https://viping.dev/blog/another-testing-flow/</loc>
         <lastmod>2026-02-20</lastmod>
     </url>
@@ -160,6 +164,9 @@
         <loc>https://viping.dev/tags/focus/</loc>
     </url>
     <url>
+        <loc>https://viping.dev/tags/fresh-start/</loc>
+    </url>
+    <url>
         <loc>https://viping.dev/tags/gym/</loc>
     </url>
     <url>
@@ -167,6 +174,9 @@
     </url>
     <url>
         <loc>https://viping.dev/tags/life/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/night/</loc>
     </url>
     <url>
         <loc>https://viping.dev/tags/note-taking/</loc>

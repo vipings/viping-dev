@@ -6,8 +6,8 @@ description = ""
 date = 2026-08-13
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["fresh-start"]
+categories = ["personal"]
 [extra]
 lang = "en"
 toc = false
