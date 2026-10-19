@@ -34,6 +34,10 @@
         <lastmod>2026-02-20</lastmod>
     </url>
     <url>
+        <loc>https://viping.dev/blog/hello-october/</loc>
+        <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
         <loc>https://viping.dev/blog/hello-world/</loc>
         <lastmod>2025-04-12</lastmod>
     </url>
@@ -183,6 +187,9 @@
         <loc>https://viping.dev/tags/human/</loc>
     </url>
     <url>
+        <loc>https://viping.dev/tags/lazy-me/</loc>
+    </url>
+    <url>
         <loc>https://viping.dev/tags/life/</loc>
     </url>
     <url>
@@ -205,6 +212,9 @@
     </url>
     <url>
         <loc>https://viping.dev/tags/reflection/</loc>
+    </url>
+    <url>
+        <loc>https://viping.dev/tags/restarts/</loc>
     </url>
     <url>
         <loc>https://viping.dev/tags/routine/</loc>
