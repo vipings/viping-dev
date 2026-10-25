@@ -1,4 +1,3 @@
-
 +++
 
 title = "Hello October"
@@ -7,7 +6,7 @@ date = 2026-10-19
 draft = false
 [taxonomies]
 tags = ["lazy-me","restarts"]
-categories = []
+categories = ["personal"]
 [extra]
 lang = "en"
 toc = false

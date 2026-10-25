@@ -1,8 +1,7 @@
-
 +++
 
 title = "Learning, Growing and Becoming"
-description = ""
+description = "Learning is key, especially in the era of AI, no matter how advanced it gets. Foundational tech skills are crucial for any job. Keep growing and improving."
 date = 2026-08-14
 draft = false
 [taxonomies]

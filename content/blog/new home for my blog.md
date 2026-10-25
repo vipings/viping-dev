@@ -1,8 +1,7 @@
-
 +++
 
 title = "new home for my blog"
-description = ""
+description = "My blog moved to a new Mac, this is now the only home for it, enjoy!"
 date = 2026-10-25
 draft = false
 [taxonomies]

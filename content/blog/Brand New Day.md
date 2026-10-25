@@ -1,8 +1,7 @@
-
 +++
 
 title = "Brand New Day"
-description = ""
+description = "Vipin reflects on a year in Bangalore, feeling a bit stuck for inspiration, but maintaining a relaxed attitude towards it."
 date = 2026-08-13
 draft = false
 [taxonomies]

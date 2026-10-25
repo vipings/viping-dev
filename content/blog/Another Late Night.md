@@ -1,8 +1,7 @@
-
 +++
 
 title = "Another Late Night"
-description = ""
+description = "Struggling to stick to a bedtime routine, Vipin finds himself still awake well past midnight, missing the opportunity to wake up refreshed in the morning."
 date = 2026-08-14
 draft = false
 [taxonomies]

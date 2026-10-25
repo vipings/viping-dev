@@ -1,13 +1,12 @@
-
 +++
 
 title = "Testing Claude Token generation"
-description = ""
+description = "Testing Claude's title and tag generation for my blog"
 date = 2026-02-21
 draft = false
 [taxonomies]
-tags = []
-categories = []
+tags = ["claude", "blog", "testing"]
+categories = ["tech"]
 [extra]
 lang = "en"
 toc = false

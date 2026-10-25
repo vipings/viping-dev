@@ -1,4 +1,3 @@
-
 +++
 
 title = "This should work"
@@ -6,7 +5,7 @@ description = "test"
 date = 2026-06-08
 draft = false
 [taxonomies]
-tags = []
+tags = ["note-taking", "starting-out", "productivity"]
 categories = []
 [extra]
 lang = "en"
