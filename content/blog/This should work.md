@@ -6,7 +6,7 @@ date = 2026-06-08
 draft = false
 [taxonomies]
 tags = ["note-taking", "starting-out", "productivity"]
-categories = []
+categories = ["personal"]
 [extra]
 lang = "en"
 toc = false
