@@ -1,8 +1,12 @@
 #!/bin/bash
 set -e
 
-VAULT_DIR="/Users/vpillai/Library/Mobile Documents/iCloud~md~obsidian/Documents/viping.dev"
+DRY_RUN=0
+[ "$1" = "--dry-run" ] && DRY_RUN=1
+
+VAULT_DIR="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/viping.dev"
 ZOLA_DIR=~/viping-dev/content/blog
+ZOLA_BIN="$HOME/zola-0.18/zola"
 
 cd ~/viping-dev
 
@@ -10,14 +14,21 @@ cd ~/viping-dev
 [ -f ~/.zshenv ] && source ~/.zshenv
 
 # Enrich vault posts BEFORE rsync so enriched metadata is never overwritten
-BLOG_DIR="$VAULT_DIR/Blog" python3 ~/viping-dev/scripts/enrich_metadata.py
+if [ $DRY_RUN = 0 ]; then
+  BLOG_DIR="$VAULT_DIR/Blog" python3 ~/viping-dev/scripts/enrich_metadata.py
+fi
 
 # Sync blog posts from the Blog/ subfolder in the vault
-rsync -av \
+rsync -av ${DRY_RUN:+--dry-run} \
   "$VAULT_DIR/Blog/" "$ZOLA_DIR/"
 
-# Zola build
-/usr/local/bin/zola build
+# Zola build (dry run writes to a temp dir so public/ is untouched)
+if [ $DRY_RUN = 1 ]; then
+  "$ZOLA_BIN" build --output-dir "$(mktemp -d)/site"
+  echo "Dry run: skipping commit and push"
+  exit 0
+fi
+"$ZOLA_BIN" build
 
 # Git commit + push (only if there are changes)
 git add content/blog/
