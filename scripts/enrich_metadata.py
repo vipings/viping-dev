@@ -1,37 +1,28 @@
 #!/usr/bin/env python3
-"""Auto-fill empty post metadata (title, description, tags, categories) using Claude."""
+"""Auto-fill empty post metadata (title, description, tags, categories) using a local Ollama model."""
 
 import json
 import os
 import re
 import sys
+import urllib.request
 from pathlib import Path
 
 BLOG_DIR = Path(os.environ.get("BLOG_DIR", Path.home() / "viping-dev" / "content" / "blog"))
 MAX_BODY_CHARS = 800
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:3b")
+JEV_URL = os.environ.get("JEV_URL", "https://api.typesafe.ai/v1/systemone")
 
 
 def get_client():
     try:
-        import anthropic
-    except ImportError:
-        print("WARNING: anthropic package not installed — skipping enrichment")
-        print("  Run: pip3 install anthropic")
-        sys.exit(0)
-
-    auth_token = os.environ.get("ANTHROPIC_AUTH_TOKEN")
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    bedrock_url = os.environ.get("ANTHROPIC_BEDROCK_BASE_URL")
-
-    if api_key:
-        return anthropic.Anthropic(api_key=api_key)
-    elif bedrock_url and auth_token:
-        # Salesforce Bedrock gateway — standard Anthropic client with custom base URL
-        return anthropic.Anthropic(api_key=auth_token, base_url=bedrock_url)
-    else:
-        print("WARNING: No API credentials found — skipping metadata enrichment")
-        print("  Set ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN + ANTHROPIC_BEDROCK_BASE_URL")
-        sys.exit(0)
+        urllib.request.urlopen(f"{OLLAMA_URL}/api/tags", timeout=5)
+    except OSError as e:
+        print(f"ERROR: Ollama is not reachable at {OLLAMA_URL}: {e}")
+        print("  Start the Ollama app, then rerun deploy.sh")
+        sys.exit(1)
+    return OLLAMA_MODEL
 
 
 def parse_frontmatter(text):
@@ -68,7 +59,7 @@ def get_current(frontmatter, field):
     return val
 
 
-def generate_metadata(client, frontmatter, body):
+def generate_metadata(model, frontmatter, body):
     current_title = get_current(frontmatter, "title")
 
     missing = []
@@ -85,11 +76,20 @@ def generate_metadata(client, frontmatter, body):
     context += f'Post content:\n{body[:MAX_BODY_CHARS]}'
 
     fields_desc = {
-        "title": 'a short, punchy title (max 60 chars)',
-        "description": 'a single sentence description (max 160 chars) in the author\'s conversational, personal tone',
-        "tags": 'a JSON array of 2-4 lowercase tag strings',
-        "categories": 'a JSON array with exactly one category string from: ["personal", "tech", "books", "fitness", "productivity"]',
+        "title": 'a short, punchy title (max 60 chars) that names the post\'s main topic',
+        "description": 'one sentence (max 160 chars) summarizing what the post is about, written in your own words in the author\'s conversational, personal tone. Do not copy sentences from the post',
+        "tags": 'a JSON array of 2-4 lowercase tag strings, each 1-2 words, hyphenated (e.g. "note-taking")',
+        "categories": 'a JSON array with exactly one category string, chosen from: ["personal", "tech", "books", "fitness", "productivity"]',
     }
+
+    metadata = {}
+    if "categories" in missing:
+        category = jev_category(context)
+        if category:
+            metadata["categories"] = [category]
+            missing.remove("categories")
+    if not missing:
+        return metadata
 
     requested = {f: fields_desc[f] for f in missing}
     fields_list = "\n".join(f'- "{k}": {v}' for k, v in requested.items())
@@ -101,16 +101,67 @@ def generate_metadata(client, frontmatter, body):
         f"Return ONLY a valid JSON object with these keys. No explanation, no markdown."
     )
 
-    message = client.messages.create(
-        model=os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5"),
-        max_tokens=200,
-        messages=[{"role": "user", "content": prompt}],
+    payload = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": False,
+        "format": "json",
+        "options": {"num_predict": 200},
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        f"{OLLAMA_URL}/api/chat", data=payload, headers={"Content-Type": "application/json"}
     )
-    raw = message.content[0].text.strip()
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        raw = json.loads(resp.read())["message"]["content"].strip()
     # Strip markdown code fences if present
     raw = re.sub(r"^```(?:json)?\n?", "", raw)
     raw = re.sub(r"\n?```$", "", raw)
-    return json.loads(raw)
+    return {**clean_metadata(json.loads(raw), missing), **metadata}
+
+
+ALLOWED_CATEGORIES = ["personal", "tech", "books", "fitness", "productivity"]
+
+
+def jev_category(context):
+    """Pick the category with TypeSafe's Jev classifier; None means fall back to Ollama."""
+    api_key = os.environ.get("TYPESAFE_API_KEY")
+    if not api_key:
+        return None
+    payload = json.dumps({
+        "model": "jev-latest",
+        "state": context,
+        "questions": {"category": {
+            "type": "choice",
+            "instructions": "Which blog category fits this post best?",
+            "criteria": {c: None for c in ALLOWED_CATEGORIES},
+        }},
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        JEV_URL, data=payload,
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            choice = json.loads(resp.read())["answers"]["category"]["choice"]
+    except (OSError, ValueError, KeyError) as e:
+        print(f"  WARNING: Jev failed, using Ollama for category: {e}")
+        return None
+    return choice if choice in ALLOWED_CATEGORIES else None
+
+
+def clean_metadata(metadata, missing):
+    cleaned = {}
+    if "title" in missing and isinstance(metadata.get("title"), str):
+        cleaned["title"] = metadata["title"].strip()[:60]
+    if "description" in missing and isinstance(metadata.get("description"), str):
+        cleaned["description"] = metadata["description"].strip()[:160]
+    if "tags" in missing and isinstance(metadata.get("tags"), list):
+        tags = [re.sub(r"[^a-z0-9-]+", "-", str(t).lower()).strip("-") for t in metadata["tags"]]
+        cleaned["tags"] = [t for t in tags if t][:4]
+    if "categories" in missing and isinstance(metadata.get("categories"), list):
+        match = [c for c in metadata["categories"] if c in ALLOWED_CATEGORIES]
+        cleaned["categories"] = match[:1]
+    return {k: v for k, v in cleaned.items() if v}
 
 
 def apply_metadata(frontmatter, metadata):
@@ -139,7 +190,7 @@ def apply_metadata(frontmatter, metadata):
     return fm
 
 
-def enrich_file(client, path):
+def enrich_file(model, path):
     text = path.read_text(encoding="utf-8")
     frontmatter, body = parse_frontmatter(text)
     if frontmatter is None:
@@ -147,7 +198,7 @@ def enrich_file(client, path):
     if not needs_enrichment(frontmatter):
         return False
 
-    metadata = generate_metadata(client, frontmatter, body)
+    metadata = generate_metadata(model, frontmatter, body)
     new_frontmatter = apply_metadata(frontmatter, metadata)
 
     new_text = f"+++\n{new_frontmatter}\n+++\n{body}"
@@ -158,13 +209,13 @@ def enrich_file(client, path):
 
 
 def main():
-    client = get_client()
+    model = get_client()
 
     md_files = list(BLOG_DIR.rglob("*.md"))
     enriched = 0
     for path in md_files:
         try:
-            if enrich_file(client, path):
+            if enrich_file(model, path):
                 enriched += 1
         except Exception as e:
             print(f"  WARNING: failed to enrich {path.name}: {e}")
