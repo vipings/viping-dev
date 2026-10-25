@@ -1,6 +1,6 @@
 +++
 
-title = "Claude Code Setup"
+title = "Testing waters with TypeSafe Jev"
 description = "Installed pro plan in Claude Code, added Rust-built plugin, built statusbar showing model details and other info"
 date = 2026-10-25
 draft = false
