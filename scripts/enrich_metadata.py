@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auto-fill empty post metadata (title, description, tags, categories) using a local Ollama model."""
+"""Auto-fill empty post metadata (tags, categories) using a local Ollama model and Jev."""
 
 import json
 import os
@@ -45,7 +45,7 @@ def field_is_empty(frontmatter, field):
 def needs_enrichment(frontmatter):
     return any(
         field_is_empty(frontmatter, f)
-        for f in ("title", "description", "tags", "categories")
+        for f in ("tags", "categories")
     )
 
 
@@ -63,10 +63,6 @@ def generate_metadata(model, frontmatter, body):
     current_title = get_current(frontmatter, "title")
 
     missing = []
-    if field_is_empty(frontmatter, "title"):
-        missing.append("title")
-    if field_is_empty(frontmatter, "description"):
-        missing.append("description")
     if field_is_empty(frontmatter, "tags"):
         missing.append("tags")
     if field_is_empty(frontmatter, "categories"):
@@ -76,8 +72,6 @@ def generate_metadata(model, frontmatter, body):
     context += f'Post content:\n{body[:MAX_BODY_CHARS]}'
 
     fields_desc = {
-        "title": 'a short, punchy title (max 60 chars) that names the post\'s main topic',
-        "description": 'one sentence (max 160 chars) summarizing what the post is about, written in your own words in the author\'s conversational, personal tone. Do not copy sentences from the post',
         "tags": 'a JSON array of 2-4 lowercase tag strings, each 1-2 words, hyphenated (e.g. "note-taking")',
         "categories": 'a JSON array with exactly one category string, chosen from: ["personal", "tech", "books", "fitness", "productivity"]',
     }
@@ -151,10 +145,6 @@ def jev_category(context):
 
 def clean_metadata(metadata, missing):
     cleaned = {}
-    if "title" in missing and isinstance(metadata.get("title"), str):
-        cleaned["title"] = metadata["title"].strip()[:60]
-    if "description" in missing and isinstance(metadata.get("description"), str):
-        cleaned["description"] = metadata["description"].strip()[:160]
     if "tags" in missing and isinstance(metadata.get("tags"), list):
         tags = [re.sub(r"[^a-z0-9-]+", "-", str(t).lower()).strip("-") for t in metadata["tags"]]
         cleaned["tags"] = [t for t in tags if t][:4]
