@@ -19,7 +19,11 @@ if [ $DRY_RUN = 0 ]; then
 fi
 
 # Sync blog posts from the Blog/ subfolder in the vault
-rsync -av ${DRY_RUN:+--dry-run} \
+RSYNC_OPTS=""
+if [ $DRY_RUN = 1 ]; then
+  RSYNC_OPTS="--dry-run"
+fi
+rsync -av $RSYNC_OPTS \
   "$VAULT_DIR/Blog/" "$ZOLA_DIR/"
 
 # Zola build (dry run writes to a temp dir so public/ is untouched)
